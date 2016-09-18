@@ -1,0 +1,51 @@
+buildscript {
+  repositories {
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  dependencies {
+    classpath "gradle.plugin.com.github.maiflai:gradle-scalatest:0.12"
+  }
+}
+import com.github.maiflai.*
+apply plugin: 'scala'
+apply plugin: ScalaTestPlugin
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile (
+        'com.amazonaws:aws-lambda-java-core:1.1.0',
+        'com.amazonaws:aws-lambda-java-events:1.1.0',
+        'com.amazonaws:aws-java-sdk:1.11.22',
+        'org.scala-lang:scala-library:2.11.8',
+        'io.circe:circe-core_2.11:0.5.1',
+        'io.circe:circe-generic_2.11:0.5.1',
+        'io.circe:circe-parser_2.11:0.5.1'
+    )
+  testCompile('org.scalatest:scalatest_2.11:3.0.0',
+              'org.pegdown:pegdown:1.6.0')
+}
+
+// Task for building the zip file for upload
+task buildZip(type: Zip) {
+    // Using the Zip API from gradle to build a zip file of all the dependencies
+    //
+    // The path to this zip file can be set in the serverless.yml file for the
+    // package/artifact setting for deployment to the S3 bucket
+    //
+    // Link: https://docs.gradle.org/current/dsl/org.gradle.api.tasks.bundling.Zip.html
+
+    // set the base name of the zip file
+    baseName = "email-forwarder"
+    from compileJava
+    from processResources
+    into('lib') {
+        from configurations.runtime
+    }
+}
+
+build.dependsOn buildZip

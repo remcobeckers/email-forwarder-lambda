@@ -1,0 +1,123 @@
+{
+  "content": "Return-Path: <remco.beckers@gmail.com>\r\nReceived: from mail-wm0-f45.google.com (mail-wm0-f45.google.com [74.125.82.45])\r\n by inbound-smtp.eu-west-1.amazonaws.com with SMTP id 7n43j8v7olm2vi36flmb35q4cq3uomv2vinju081\r\n for test@test.org;\r\n Sat, 17 Sep 2016 13:59:41 +0000 (UTC)\r\nX-SES-Spam-Verdict: PASS\r\nX-SES-Virus-Verdict: PASS\r\nReceived-SPF: pass (spfCheck: domain of _spf.google.com designates 74.125.82.45 as permitted sender) client-ip=74.125.82.45; envelope-from=remco.beckers@gmail.com; helo=mail-wm0-f45.google.com;\r\nAuthentication-Results: amazonses.com;\r\n spf=pass (spfCheck: domain of _spf.google.com designates 74.125.82.45 as permitted sender) client-ip=74.125.82.45; envelope-from=remco.beckers@gmail.com; helo=mail-wm0-f45.google.com;\r\n dkim=pass header.i=@gmail.com;\r\nReceived: by mail-wm0-f45.google.com with SMTP id w84so6110914wmg.1\r\n        for <test@test.org>; Sat, 17 Sep 2016 06:59:41 -0700 (PDT)\r\nDKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=gmail.com; s=20120113;\r\n        h=mime-version:from:date:message-id:subject:to;\r\n        bh=WPTDzO6gu9CTd2M1HEQCukequ566IQUsZHz66pd5mUg=;\r\n        b=A2bRbFlN6QzKuI6C3rSjpszmv1jrx89pgZuDutSh/EgJRPWZHZZah13el3b/OE9EOh\r\n         TIr9ORmenjaMe0niJW1JVATqG+ygCAYcL2sjQIr+giPngBh23JEK8f3ZMLe/sSLnZdQf\r\n         98GFUHo/Q3jD/8Re4zwDqG2wY/xnWJTWzwbgJdFYQTU13TEeOSfpzYQQk3b4LURbDcCS\r\n         cN2Pgjh4pVJSPf3yN48LJOjNLXfBonTE4boQNhpAh0YG29E6qJyR5Hnh2rBz5I0kLCD2\r\n         AxnmFpbvZ96ihpb6pgIbAHWCjp7JyHodTEZMA1NBBKGEjul2N0cxXyQd6SFRAYZCnpyZ\r\n         bNjg==\r\nX-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n        d=1e100.net; s=20130820;\r\n        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;\r\n        bh=WPTDzO6gu9CTd2M1HEQCukequ566IQUsZHz66pd5mUg=;\r\n        b=AdCH+yWScpXobrFXrRC2OZFGugZ7+NYRH0RA4GUY9JbSd5gonEJogiL20Oy8tdOUxK\r\n         GOdLOVT0B6apo2G3VhOlMJbIAlP9YCjWdWrlmtbnmjrl7IXaek+ifPvJQah2AhsZUFj2\r\n         FShGpoZUNnrrqDrPf748NqbsjoMscf9puOz6GAi4bskZdF45geE6thqt3NVRIvQGAhKS\r\n         2OhFwGIadvyXb9ACBHv5qjr0dbky+9h1ik4PfehQ06FjlI8iadF9g/1KCY99dGNFQCyo\r\n         PiQbvgXYbfQTI4H2lXngv6GbTtncVKD74RI4uZpAmJKWhylFpRNCisZJNBd8A6bq1rZ+\r\n         rHlw==\r\nX-Gm-Message-State: AE9vXwM2vp7JMfyeopfIUi4Fvn/j5MuwnDYbo998bl2OHGYg1wJXiXTmoQ5ulAsdgHPIrjUE4h667dcCEiBAwA==\r\nX-Received: by 10.194.133.104 with SMTP id pb8mr17896198wjb.139.1474120780529;\r\n Sat, 17 Sep 2016 06:59:40 -0700 (PDT)\r\nMIME-Version: 1.0\r\nFrom: Remco Beckers <remco.beckers@gmail.com>\r\nDate: Sat, 17 Sep 2016 13:59:20 +0000\r\nMessage-ID: <CA+_jV_fSbuyM_9S3YgAGF3MBSf0pyC40EcgahVOEW4ALUCOEXA@mail.gmail.com>\r\nSubject: Test\r\nTo: \"test@test.org\" <test@test.org>\r\nContent-Type: multipart/alternative; boundary=089e012292687ad7b3053cb47d84\r\n\r\n--089e012292687ad7b3053cb47d84\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\ntest\r\n\r\n--089e012292687ad7b3053cb47d84\r\nContent-Type: text/html; charset=UTF-8\r\n\r\n<div dir=\"ltr\">test</div>\r\n\r\n--089e012292687ad7b3053cb47d84--\r\n",
+  "mail": {
+    "commonHeaders": {
+      "date": "Sat, 17 Sep 2016 13:59:20 +0000",
+      "from": [
+        "Remco Beckers <remco.beckers@gmail.com>"
+      ],
+      "messageId": "<CA+_jV_fSbuyM_9S3YgAGF3MBSf0pyC40EcgahVOEW4ALUCOEXA@mail.gmail.com>",
+      "returnPath": "remco.beckers@gmail.com",
+      "subject": "Test",
+      "to": [
+        "test@test.org"
+      ]
+    },
+    "destination": [
+      "test@test.org"
+    ],
+    "headers": [
+      {
+        "name": "Return-Path",
+        "value": "<remco.beckers@gmail.com>"
+      },
+      {
+        "name": "Received",
+        "value": "from mail-wm0-f45.google.com (mail-wm0-f45.google.com [74.125.82.45]) by inbound-smtp.eu-west-1.amazonaws.com with SMTP id 7n43j8v7olm2vi36flmb35q4cq3uomv2vinju081 for test@test.org; Sat, 17 Sep 2016 13:59:41 +0000 (UTC)"
+      },
+      {
+        "name": "X-SES-Spam-Verdict",
+        "value": "PASS"
+      },
+      {
+        "name": "X-SES-Virus-Verdict",
+        "value": "PASS"
+      },
+      {
+        "name": "Received-SPF",
+        "value": "pass (spfCheck: domain of _spf.google.com designates 74.125.82.45 as permitted sender) client-ip=74.125.82.45; envelope-from=remco.beckers@gmail.com; helo=mail-wm0-f45.google.com;"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "amazonses.com; spf=pass (spfCheck: domain of _spf.google.com designates 74.125.82.45 as permitted sender) client-ip=74.125.82.45; envelope-from=remco.beckers@gmail.com; helo=mail-wm0-f45.google.com; dkim=pass header.i=@gmail.com;"
+      },
+      {
+        "name": "Received",
+        "value": "by mail-wm0-f45.google.com with SMTP id w84so6110914wmg.1 for <test@test.org>; Sat, 17 Sep 2016 06:59:41 -0700 (PDT)"
+      },
+      {
+        "name": "DKIM-Signature",
+        "value": "v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113; h=mime-version:from:date:message-id:subject:to; bh=WPTDzO6gu9CTd2M1HEQCukequ566IQUsZHz66pd5mUg=; b=A2bRbFlN6QzKuI6C3rSjpszmv1jrx89pgZuDutSh/EgJRPWZHZZah13el3b/OE9EOhTIr9ORmenjaMe0niJW1JVATqG+ygCAYcL2sjQIr+giPngBh23JEK8f3ZMLe/sSLnZdQf98GFUHo/Q3jD/8Re4zwDqG2wY/xnWJTWzwbgJdFYQTU13TEeOSfpzYQQk3b4LURbDcCScN2Pgjh4pVJSPf3yN48LJOjNLXfBonTE4boQNhpAh0YG29E6qJyR5Hnh2rBz5I0kLCD2AxnmFpbvZ96ihpb6pgIbAHWCjp7JyHodTEZMA1NBBKGEjul2N0cxXyQd6SFRAYZCnpyZbNjg=="
+      },
+      {
+        "name": "X-Google-DKIM-Signature",
+        "value": "v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20130820; h=x-gm-message-state:mime-version:from:date:message-id:subject:to; bh=WPTDzO6gu9CTd2M1HEQCukequ566IQUsZHz66pd5mUg=; b=AdCH+yWScpXobrFXrRC2OZFGugZ7+NYRH0RA4GUY9JbSd5gonEJogiL20Oy8tdOUxK GOdLOVT0B6apo2G3VhOlMJbIAlP9YCjWdWrlmtbnmjrl7IXaek+ifPvJQah2AhsZUFj2 FShGpoZUNnrrqDrPf748NqbsjoMscf9puOz6GAi4bskZdF45geE6thqt3NVRIvQGAhKS 2OhFwGIadvyXb9ACBHv5qjr0dbky+9h1ik4PfehQ06FjlI8iadF9g/1KCY99dGNFQCyo PiQbvgXYbfQTI4H2lXngv6GbTtncVKD74RI4uZpAmJKWhylFpRNCisZJNBd8A6bq1rZ+ rHlw=="
+      },
+      {
+        "name": "X-Gm-Message-State",
+        "value": "AE9vXwM2vp7JMfyeopfIUi4Fvn/j5MuwnDYbo998bl2OHGYg1wJXiXTmoQ5ulAsdgHPIrjUE4h667dcCEiBAwA=="
+      },
+      {
+        "name": "X-Received",
+        "value": "by 10.194.133.104 with SMTP id pb8mr17896198wjb.139.1474120780529; Sat, 17 Sep 2016 06:59:40 -0700 (PDT)"
+      },
+      {
+        "name": "MIME-Version",
+        "value": "1.0"
+      },
+      {
+        "name": "From",
+        "value": "Remco Beckers <remco.beckers@gmail.com>"
+      },
+      {
+        "name": "Date",
+        "value": "Sat, 17 Sep 2016 13:59:20 +0000"
+      },
+      {
+        "name": "Message-ID",
+        "value": "<CA+_jV_fSbuyM_9S3YgAGF3MBSf0pyC40EcgahVOEW4ALUCOEXA@mail.gmail.com>"
+      },
+      {
+        "name": "Subject",
+        "value": "Test"
+      },
+      {
+        "name": "To",
+        "value": "\"test@test.org\" <test@test.org>"
+      },
+      {
+        "name": "Content-Type",
+        "value": "multipart/alternative; boundary=089e012292687ad7b3053cb47d84"
+      }
+    ],
+    "headersTruncated": false,
+    "messageId": "7n43j8v7olm2vi36flmb35q4cq3uomv2vinju081",
+    "source": "remco.beckers@gmail.com",
+    "timestamp": "2016-09-17T13:59:41.334Z"
+  },
+  "notificationType": "Received",
+  "receipt": {
+    "action": {
+      "encoding": "UTF8",
+      "topicArn": "arn:aws:sns:eu-west-1:666937758392:email-topic",
+      "type": "SNS"
+    },
+    "dkimVerdict": {
+      "status": "PASS"
+    },
+    "processingTimeMillis": 288,
+    "recipients": [
+      "test@test.org"
+    ],
+    "spamVerdict": {
+      "status": "PASS"
+    },
+    "spfVerdict": {
+      "status": "PASS"
+    },
+    "timestamp": "2016-09-17T13:59:41.334Z",
+    "virusVerdict": {
+      "status": "PASS"
+    }
+  }
+}
