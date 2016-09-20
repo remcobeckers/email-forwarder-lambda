@@ -39,7 +39,7 @@ package:
 #    - include-me.java
 #  exclude:
 #    - exclude-me.java
-  artifact: build/distributions/email-forwarder.zip
+  artifact: target/universal/email-forwarder.zip
 
 functions:
   forwarder:

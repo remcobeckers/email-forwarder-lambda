@@ -1,9 +1,8 @@
 # use glob syntax.
 syntax: glob
-.gradle/
 .idea/
 build/
 /src/test/resources/config.properties
-/gradlew.bat
-/gradlew
-/gradle
+**/target
+/project/target
+*.class
