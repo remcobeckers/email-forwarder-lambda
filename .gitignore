@@ -2,7 +2,6 @@
 syntax: glob
 .idea/
 build/
-/src/test/resources/config.properties
 **/target
 /project/target
 *.class
